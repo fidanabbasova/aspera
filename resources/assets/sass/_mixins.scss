@@ -1,0 +1,43 @@
+@mixin transition($p, $d, $t) {
+  transition-property: $p;
+  transition-duration: $d;
+  transition-timing-function: $t;
+  -webkit-transition-property: $p;
+  -webkit-transition-duration: $d;
+  -webkit-transition-timing-function: $t;
+  -ms-transition-property: $p;
+  -ms-transition-duration: $d;
+  -ms-transition-timing-function: $t;
+}
+@mixin transformOrigin($y, $x) {
+  -ms-transform-origin: $y $x;
+  -webkit-transform-origin: $y $x;
+  transform-origin: $y $x;
+}
+@mixin translateY($x){
+  -ms-transform: translateY($x);
+  -webkit-transform: translateY($x);
+  transform: translateY($x);
+}
+@mixin rotate($d) {
+  -ms-transform: rotate($d);
+  -webkit-transform: rotate($d);
+  transform: rotate($d);
+}
+@mixin padV($pad) {
+  padding-top: $pad;
+  padding-bottom: $pad;
+}
+@mixin padH($pad) {
+  padding-right: $pad;
+  padding-left: $pad;
+}
+@mixin marV($mar) {
+  margin-top: $mar;
+  margin-bottom: $mar;
+}
+@mixin marH($mar) {
+  margin-right: $mar;
+  margin-left: $mar;
+}
+

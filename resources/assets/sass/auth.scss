@@ -1,0 +1,52 @@
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "variables";
+@import "mixins";
+@import "layout";
+body {
+  background: url(" ../img/therapy.jpg") center/cover no-repeat fixed;
+}
+#auth {
+  .col-md-8 {
+    background: transparent !important;
+    .panel{
+      background: rgba(255, 255, 255, .9) !important;
+      .panel-heading {
+        font-size: 24px !important;
+        background: transparent !important;
+      }
+      .panel-body {
+        background: transparent !important;
+        input {
+          border-radius: 0;
+          &:focus {
+            border: 1px solid $primary-color !important;
+          }
+        }
+        button {
+          background: $primary-color !important;
+          border: $primary-color !important;
+          border-radius: 0;
+        }
+        a {
+          color: $primary-color !important;
+        }
+      }
+      @media screen and (max-width: 991px){
+        margin-top: 30px;
+      }
+      @media screen and (min-width: 992px){
+        @include marV(40px);
+      }
+    }
+    @media screen and (min-width: 992px){
+      .panel {
+        .panel-heading {
+          @include padV(20px);
+        }
+        .panel-body {
+          @include padV(40px);
+        }
+      }
+    }
+  }
+}

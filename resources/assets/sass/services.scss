@@ -1,0 +1,32 @@
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "variables";
+@import "mixins";
+@import "layout";
+
+#services {
+	@include padV(40px);
+	font-size: 16px;
+	h3 {
+		color: $primary-color;
+		@media screen and (max-width: 991px) and (max-width: 767px){
+			font-size: 22px;
+		}	
+	}
+	ul {
+		padding-left: 0;
+		li {
+			list-style-type: none;
+			line-height: 32px;
+			i {
+				font-weight: bold;
+				color: $primary-color;
+			}
+		}
+	}
+	@media screen and (max-width: 536px){
+		padding-top: 10px;
+		h3 {
+			font-size: 20px;
+		}
+	}
+}
